@@ -2,25 +2,27 @@ function Novo(){
     return(
         <div className = "centro">
 
-		<div className="botao">
+		<button className="botao">
             <p className="titulo"> PREVIOUS </p>
 
-            <p>
+
+            <p className="subtitulo">
 			JQUERY: DETECT UPDATE OF HTML ELEMENT
             </p>
 
             
-         </div>
+         </button>
 
-		 <div className="botao">
+		 <button className="botao">
             <p className="titulo"> NEXT </p>
 
-            <p>
+
+            <p className="subtitulo">
 			RAILS + DEVISE WORKING WITH MULTIPLE MODELS
-            </p>
+			</p>
 
             
-         </div>
+         </button>
            
 
          </div>
