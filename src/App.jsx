@@ -1,31 +1,43 @@
-function Novo(){
-    return(
-        <div className = "centro">
+import Title from "./Title.jsx"
+import "./App.css"
 
-		<button className="botao">
-            <p className="titulo"> PREVIOUS </p>
+function App(){
+
+	const texto=[
+		{
+		   titulo: "PREVIOUS",
+		   subtitulo: "	JQUERY: DETECT UPDATE OF HTML",
+		   subtitulo2:"ELEMENT",
+		},
+	 
+	
+		{
+		   titulo: "NEXT",
+		   subtitulo: "RAILS + DEVISE WORKING WITH",
+		   subtitulo2: "MULTIPLE MODELS",
+		}
+	 ];
+
+	 return (
+		<div>
+	
+		  {texto.map((text) => {
+			return <Title
+	
+			  titulo={text.titulo}
+			  subtitulo={text.subtitulo}
+			  subtitulo2={text.subtitulo2}
+			/>;
+	
+	
+		  })}
+		 
+		
+	
+		</div>
+	  );
+	}
+	
+	export default App
 
 
-            <p className="subtitulo">
-			JQUERY: DETECT UPDATE OF HTML ELEMENT
-            </p>
-
-            
-         </button>
-
-		 <button className="botao">
-            <p className="titulo"> NEXT </p>
-
-
-            <p className="subtitulo">
-			RAILS + DEVISE WORKING WITH MULTIPLE MODELS
-			</p>
-
-            
-         </button>
-           
-
-         </div>
-    )
-}
-export default Novo;
